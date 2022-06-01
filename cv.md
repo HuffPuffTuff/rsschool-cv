@@ -1,9 +1,10 @@
 # Rodion Russkikh
 ----
 ## Contacts: 
-    - telegram: @huffpufftuff
-    - email: mrsalevan@gmail.com
-    - discord: huffpufftuff#5568
+    * telegram: @huffpufftuff
+    * email: mrsalevan@gmail.com
+    * discord: huffpufftuff#5568
+
 ----
 ## About myself:
 
@@ -13,20 +14,20 @@ I am not working now and I can devote myself completely to my studies
 
 ----
 ## Skills:
-    - HTML5 , CSS3
-    - Adobe Photoshop
-    - VS Code
+    * HTML5 , CSS3
+    * Adobe Photoshop
+    * VS Code
 
 ----
 
 ## Languages:
-    - Russian - native
-    - English - A2
+    * Russian - native
+    * English - A2
 
 ----
 ## Education:
-    - HTML, CSS, JS simulator on htmlacademy.ru
-    - higher education in personnel management at ISTU
+    * HTML, CSS, JS simulator on htmlacademy.ru
+    * higher education in personnel management at ISTU
 
 ----
 ## Code example:
