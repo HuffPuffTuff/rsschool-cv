@@ -3,10 +3,35 @@ html {
 }
 
 body {
-    margin: 0;    
+    margin: 0;
+    font-family: 'Noto Serif', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.title {
-    color: red;
-    font-size: 50px;
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Header */
+.page__header {
+    background-color: rgb(85, 150, 255);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.menu {
+    font-size: 19px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.menu__link {
+    margin: 0 30px;
+    text-decoration: none;
+    color: #1a1818;
 }
