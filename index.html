@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/rsschool-cv/CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Merienda&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
     <title>My CV</title>
 </head>
 <body>
@@ -16,8 +16,8 @@
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item"><a class="nav__link" href="#contacts">Contacts</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#summary">Summary</a></li>
                     <li class="nav__item"><a class="nav__link" href="#skills">Skills</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#summary">Summary</a></li>
                     <li class="nav__item"><a class="nav__link" href="#languages">Languages</a></li>
                     <li class="nav__item"><a class="nav__link" href="#education">Education</a></li>
                     <li class="nav__item"><a class="nav__link" href="#code">Code Example</a></li>
@@ -26,95 +26,78 @@
                 </ul>
             </nav>
         </div>
-   </header> 
-   <main class="main">
-        <div class="container main__container">
-            <section class="section section__profile section__line" id="profile">
-                <img class="photo" src="/rsschool-cv/assets/img/photo.png" alt="my photo">
-                <div class="section__profile-title">
-                    <h1 class="profile__title">Rodion Russkikh</h1>
-                    <h2 class="profile__suptitle">Junior Front-End Developer</h2>
+   </header> <!--/header-->
+   <main>
+    <section class="intro section__bg">
+        <div class="container">
+            <div class="intro__inner">
+                <div class="intro__title">
+                    <h1>Rodion Russkikh</h1>
+                    <h2 class="intro__suptitle">Front-End Web Developer (Beginner)</h2>
                 </div>
-            </section>
-            <section class="section" id="contacts">
-                <h2>Contacts:</h2>
-                <ul class="contacts__list">
-                    <li>Tbilisi , Georgia</li>
-                    <li>Telegram: <a href="https://t.me/HuffPuffTuff">@huffpufftuff</a></li>
-                    <li>Email: mrsalevan@gmail.com</li>
-                    <li>Discord: huffpufftuff#5568</li>
-                </ul>
-                <div class="section__line"></div>
-            </section>
-            <section class="section" id="summary">
-                <h2>Summary:</h2>
-                <p>I want to work remotely. I think the interface is what I need. I am 23 years old, and I have a higher education. Recently moved to live in Tbilisi. Before that, I worked for 1 year as a barista and 3 years as a manager in a network of massage parlors. I am not working now and I can devote myself completely to my studies</p>
-                <div class="section__line"></div>
-            </section>
-            <section class="section" id="skills">
+                <img class="my-photo" src="/rsschool-cv/assets/img/photo.png" alt="my photo">
+            </div>
+            <div class="contacts" id="contacts">
+                <div class="contacts__item location">
+                    <img class="item__img" src="/rsschool-cv/assets/img/location.svg" alt="location" width="40">
+                    <p>Tbilisi , Georgia</p>
+                </div>
+                <div class="contacts__item telegram">
+                    <img class="item__img" src="/rsschool-cv/assets/img/telegram.svg" alt="tg logo" width="40">
+                    <a class="telegram__link" href="https://t.me/HuffPuffTuff">HuffPuffTuff</a>
+                </div>
+                <div class="contacts__item">
+                    <img class="item__img" src="/rsschool-cv/assets/img/discord-logo.svg" alt="discord logo" width="40">
+                    <p>huffpufftuff#5568</p>
+                </div>
+                <div class="contacts__item">
+                    <img class="item__img" src="/rsschool-cv/assets/img/gmail-logo.svg" alt="gmail logo" width="38">
+                    <p>mrsalevan@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>  <!--./intro-->
+    <section class="cv__information">
+        <div class="container grid">
+            <div class="skills">
                 <h2>Skills:</h2>
                 <ul>
                     <li>HTML5 , CSS3</li>
                     <li>Adobe Photoshop, Figma</li>
                     <li>VS Code</li>
                 </ul>
-                <div class="section__line"></div>
-            </section>
-            <section class="section" id="languages">
+            </div>
+            <div class="summary" id="summary">
+                <h2>Summary:</h2>
+                <p>I want to work remotely. I think the Front-End is what I need. I am 23 years old, and I have a higher education. Recently moved to live in Tbilisi. Before that, I worked for 1 year as a barista and 3 years as a manager in a network of massage parlors. I am not working now and I can devote myself completely to my studies</p>
+            </div>
+            <div class="code">3</div>
+            <div class="education">
+                <h2>Education:</h2>
+                <ul>
+                    <li>Izhevsk Technical State University - Personnel management</li>
+                </ul>
+                <h2>Courses:</h2>
+                <ul>
+                    <li>htmlacademy simulator - HTML, CSS, JS </li>
+                    <li>JS/FE Pre-School 2022Q2 - in progress</li>
+                </ul>
+            </div>
+            <div>5</div>
+            <div class="languages" id="languages">
                 <h2>Languages</h2>
                 <ul>
                     <li>Russian - native</li>
                     <li>English - A2</li>
                 </ul>
-                <div class="section__line"></div>
-            </section>
-            <section class="section" id="education">
-                <h2>Education:</h2>
-                <ul>
-                    <li>Izhevsk Technical State University - Personnel management</li>
-                </ul>
-                <div class="section__line"></div>
-            </section>
-            <section class="section" id="code">
-                <h2>Code Example:</h2>
-                <pre class="pre">
-                    <code>
-    let heart = document.querySelector('.heart');
-    let likesNumber = document.querySelector('.likes-number');
-
-    heart.onclick = function () {
-        if (heart.classList.contains('added')) {
-            likesNumber.textContent--;
-        } else {
-            likesNumber.textContent++;
-        }
-        heart.classList.toggle('added');
-    };   
-                    </code>
-                </pre>
-                <div class="section__line"></div>
-            </section>
-            <section class="section" id="courses">
-                <h2>Courses</h2>
-                <ul>
-                    <li>htmlacademy simulator - HTML, CSS, JS </li>
-                    <li>JS/FE Pre-School 2022Q2 - in progress</li>
-                </ul>
-                <div class="section__line section__line-none"></div>
-            </section>
-            <section class="section section__projects" id="projects">
-                <h2>Projects</h2>
-                <ul>
-                    <li>In Progress</li>
-                </ul>
-                <div class="section__line section__line-none"></div>
-            </section>
+            </div>
         </div>
-   </main>
+    </section>
+</main>
    <footer class="footer">
            <div class="container footer__container">
                 <div>© 2022
-                <a href="https://github.com/HuffPuffTuff">HuffPuffTuff</a>
+                <a href="https://github.com/HuffPuffTuff">My GitHub Account</a>
                 </div>
                 <a href="https://rs.school/js/"><img class="course__logo" src="/rsschool-cv/assets/img/rs_school_js.svg" alt="course.logo"></a>
            </div>
