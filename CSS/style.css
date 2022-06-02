@@ -3,7 +3,11 @@ html {
     scroll-behavior: smooth; 
 }
 
-h1, h2, h3, h4, h5, h6, p {
+ul {
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+h1, h2, h3, h4, h5, h6, p, pre {
     margin: 0; /*Убрать оступ у заголовков*/
   }
 
@@ -155,6 +159,46 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
     gap: 15px;
+    grid-template-areas: "skills summary"
+	                     "code code"
+                         "education languages"
+                         "courses projects";
+}
+
+.projects {
+    grid-area: projects;
+}
+
+.courses {
+    grid-area: courses;
+}
+
+.languages {
+    grid-area: languages;
+}
+
+.education {
+    grid-area: education;
+}
+
+.skills {
+    grid-area: skills;
+}
+
+.code {
+    padding: 0 50px;
+    background-color: rgba(0, 0, 0, 0.132);
+    grid-area: code;
+    justify-self: center;
+    border-radius: 10%;
+}
+
+.code h2 {
+    padding-top: 20px;
+}
+
+.summary {
+    grid-area: summary;
 }
 
 .summary p {

@@ -18,9 +18,9 @@
                     <li class="nav__item"><a class="nav__link" href="#contacts">Contacts</a></li>
                     <li class="nav__item"><a class="nav__link" href="#skills">Skills</a></li>
                     <li class="nav__item"><a class="nav__link" href="#summary">Summary</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#languages">Languages</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#education">Education</a></li>
                     <li class="nav__item"><a class="nav__link" href="#code">Code Example</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#education">Education</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#languages">Languages</a></li>
                     <li class="nav__item"><a class="nav__link" href="#courses">Courses</a></li>
                     <li class="nav__item"><a class="nav__link" href="#projects">Projects</a></li>
                 </ul>
@@ -59,7 +59,7 @@
     </section>  <!--./intro-->
     <section class="cv__information">
         <div class="container grid">
-            <div class="skills">
+            <div class="skills" id="skills">
                 <h2>Skills:</h2>
                 <ul>
                     <li>HTML5 , CSS3</li>
@@ -71,24 +71,48 @@
                 <h2>Summary:</h2>
                 <p>I want to work remotely. I think the Front-End is what I need. I am 23 years old, and I have a higher education. Recently moved to live in Tbilisi. Before that, I worked for 1 year as a barista and 3 years as a manager in a network of massage parlors. I am not working now and I can devote myself completely to my studies</p>
             </div>
-            <div class="code">3</div>
-            <div class="education">
+            <div class="code">
+                <h2>Code Example:</h2>
+                <pre class="pre">
+                    <code>
+let heart = document.querySelector('.heart');
+let likesNumber = document.querySelector('.likes-number');
+
+heart.onclick = function () {
+    if (heart.classList.contains('added')) {
+        likesNumber.textContent--;
+     } else {
+        likesNumber.textContent++;
+    }
+    heart.classList.toggle('added');
+};
+                    </code>
+                </pre>
+            </div>
+            <div class="education" id="education">
                 <h2>Education:</h2>
                 <ul>
-                    <li>Izhevsk Technical State University - Personnel management</li>
+                    <li>Izhevsk Technical State University - Personnel Management</li>
                 </ul>
+            </div>
+            <div class="courses" id="courses">
                 <h2>Courses:</h2>
                 <ul>
                     <li>htmlacademy simulator - HTML, CSS, JS </li>
                     <li>JS/FE Pre-School 2022Q2 - in progress</li>
                 </ul>
             </div>
-            <div>5</div>
             <div class="languages" id="languages">
                 <h2>Languages</h2>
                 <ul>
                     <li>Russian - native</li>
                     <li>English - A2</li>
+                </ul>
+            </div>
+            <div class="projects" id="projects">
+                <h2>Projects:</h2>
+                <ul>
+                    <li>In Progress</li>
                 </ul>
             </div>
         </div>
