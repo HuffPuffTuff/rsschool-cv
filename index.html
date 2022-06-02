@@ -7,23 +7,39 @@
     <link rel="stylesheet" href="/rsschool-cv/CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
     <title>My CV</title>
 </head>
 <body>
-   <header class="page__header">
+   <header class="header">
         <div class="container">
-            <nav class="menu">
-                <a class="menu__link" href="#">Contacts</a>
-                <a class="menu__link" href="#">About Me</a>
-                <a class="menu__link" href="#">Skills</a>
-                <a class="menu__link" href="#">Languages</a>
-                <a class="menu__link" href="#">Education</a>
-                <a class="menu__link" href="#">Code Example</a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="#contacts">Contacts</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#summary">Summary</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#skills">Skills</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#languages">Languages</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#education">Education</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#code">Code Example</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#projects">Projects</a></li>
+                </ul>
             </nav>
         </div>
    </header> 
-   <main></main>
+   <main class="main">
+        <div class="container main__container">
+            <section class="section section__profile" id="profile">
+                <img class="photo" src="/rsschool-cv/assets/img/photo.png" alt="my photo">
+                <div class="section__profile-title">
+                    <h1 class="profile__title">Rodion Russkikh</h1>
+                    <h2 class="profile__suptitle">Junior Front-End Developer</h2>
+                </div>
+            </section>
+            <section class="section" id="contacts">Contacts</section>
+            <section class="section">Summary</section>
+            <section class="section"></section>
+        </div>
+   </main>
    <footer></footer>
 </body>
 </html>
