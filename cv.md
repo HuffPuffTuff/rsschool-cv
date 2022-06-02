@@ -1,6 +1,7 @@
 # Rodion Russkikh
 ----
 ## Contacts: 
+    * Tbilisi , Georgia
     * telegram: @huffpufftuff
     * email: mrsalevan@gmail.com
     * discord: huffpufftuff#5568
@@ -15,7 +16,7 @@ I am not working now and I can devote myself completely to my studies
 ----
 ## Skills:
     * HTML5 , CSS3
-    * Adobe Photoshop
+    * Adobe Photoshop, Figma
     * VS Code
 
 ----
