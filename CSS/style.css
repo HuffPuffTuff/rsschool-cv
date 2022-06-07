@@ -48,6 +48,7 @@ body {
 }
 
 .nav__list {
+    padding-left: 0;
     margin: 0;
     font-size: 16px;
     text-transform: uppercase;
@@ -60,19 +61,39 @@ body {
 }
 
 .nav__item {
+    padding: 0 15px;
     padding-bottom: 5px;
 }
 
 .nav__link {
-    padding: 0 15px;
     text-decoration: none;
     color: #fff;
-    transition: color 0.3s linear;
+
+    position: relative;
 }
 
 .nav__link:hover { 
     color: #fce38a;
 }
+
+.nav__link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: #fce38a;
+    position: absolute;
+    opacity: 0;
+    transition: width 0.8s ease-out;
+
+}
+
+.nav__link:hover::after {
+    opacity: 1;
+    width: 100%;
+    
+}
+
 
 /* Intro */
 
@@ -114,6 +135,8 @@ body {
     height: auto;
     border-radius: 25%;
 }
+    
+
 
 .contacts {
     font-family: 'Merienda', cursive;
@@ -131,7 +154,7 @@ body {
 }
 
 
-@media (max-width: 990px) {
+@media (max-width: 1050px) {
     .contacts__item {
       width: 50%;
     }
@@ -145,7 +168,25 @@ body {
 
 .telegram__link {
     text-decoration: none;
+    position: relative;
 }
+
+.telegram__link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px; 
+    background-color: #e88282;
+    position: absolute;
+    opacity: 0;
+    transition: width 0.8s ease-out;
+}
+
+.telegram__link:hover::after {
+    opacity: 1;
+    width: 100%;
+}
+
 
 .item__img {
     margin-right: 10px;
@@ -192,17 +233,6 @@ body {
     grid-area: skills;
 }
 
-.code {
-    padding: 0 50px;
-    background-color: rgba(0, 0, 0, 0.132);
-    grid-area: code;
-    justify-self: center;
-    border-radius: 10%;
-}
-
-.code h2 {
-    padding-top: 20px;
-}
 
 .summary {
     grid-area: summary;
@@ -216,22 +246,35 @@ pre {
     width: 100%;
 }
 
+.code {
+    padding: 0 30px;
+    background-color: rgba(0, 0, 0, 0.132);
+    grid-area: code;
+    justify-self: center;
+    border-radius: 10%;
+}
+
+.code h2 {
+    padding-top: 20px;
+}
+
 .code-example {
     white-space: pre-wrap;
-    overflow-x: auto;
+    
 }
 
 @media (max-width: 550px) {
     .code-example {
-        font-size: 16px;
+        font-size: 12px;
     } 
-    .code h2 {
-        font-size: 22px;
+    p {
+        font-size: 14px;
+    }
+    h2 {
+        font-size: 18px;
     }
 
 }
-
-
 
 
 
